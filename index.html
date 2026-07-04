@@ -4,187 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wandrey Rodrigues Ferreira | Portfólio</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Tailwind CSS CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              darkbg: "#0a0f1d",
-              darkcard: "#111827",
-              darkborder: "#1f2937",
-              cyanneon: "#00f0ff",
-              greeneon: "#39ff14",
+              darkbg: "#0a0f1d", darkcard: "#111827", darkborder: "#1f2937",
+              cyanneon: "#00f0ff", greeneon: "#39ff14",
             },
             fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              mono: ["Fira Code", "monospace"],
+              sans: ["Inter", "sans-serif"], mono: ["Fira Code", "monospace"],
             },
           },
         },
       };
     </script>
     <style>
-      body {
-        background-color: #0a0f1d;
-        color: #e2e8f0;
-      }
-      .glow-text-cyan {
-        text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
-      }
-      .glow-text-green {
-        text-shadow: 0 0 12px rgba(57, 255, 20, 0.6);
-      }
-      .glow-btn-cyan {
-        box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
-        transition: all 0.3s ease;
-      }
-      .glow-btn-cyan:hover {
-        box-shadow: 0 0 20px rgba(0, 240, 255, 0.7);
-      }
-      .glow-btn-green {
-        box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
-        transition: all 0.3s ease;
-      }
-      .glow-btn-green:hover {
-        box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
-      }
-      .card-glow:hover {
-        box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
-        border-color: #00f0ff;
-      }
-      .profile-glow {
-        box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
-        border: 2px solid #00f0ff;
-      }
+      body { background-color: #0a0f1d; color: #e2e8f0; }
+      .glow-text-cyan { text-shadow: 0 0 12px rgba(0, 240, 255, 0.6); }
+      .glow-text-green { text-shadow: 0 0 12px rgba(57, 255, 20, 0.6); }
+      .glow-btn-cyan { box-shadow: 0 0 10px rgba(0, 240, 255, 0.3); transition: all 0.3s ease; }
+      .glow-btn-cyan:hover { box-shadow: 0 0 20px rgba(0, 240, 255, 0.7); }
+      .glow-btn-green { box-shadow: 0 0 10px rgba(57, 255, 20, 0.2); transition: all 0.3s ease; }
+      .glow-btn-green:hover { box-shadow: 0 0 20px rgba(57, 255, 20, 0.6); }
+      .card-glow:hover { box-shadow: 0 0 25px rgba(0, 240, 255, 0.15); border-color: #00f0ff; }
+      .profile-glow { box-shadow: 0 0 30px rgba(0, 240, 255, 0.2); border: 2px solid #00f0ff; }
     </style>
   </head>
-  <body
-    class="font-sans antialiased selection:bg-cyanneon selection:text-darkbg"
-  >
+  <body class="font-sans antialiased selection:bg-cyanneon selection:text-darkbg">
+    
     <!-- Navbar -->
-    <nav
-      class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-darkborder/50 px-6 py-4"
-    >
+    <nav class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-darkborder/50 px-6 py-4">
       <div class="max-w-6xl mx-auto flex items-center justify-between">
-        <a
-          href="#"
-          class="font-mono text-lg font-bold tracking-wider text-white"
-        >
-          WANDREY<span class="text-cyanneon">.</span>DEV
-        </a>
-        <div
-          class="hidden md:flex items-center space-x-8 font-mono text-sm tracking-wide"
-        >
-          <a
-            href="#about"
-            class="text-slate-400 hover:text-cyanneon transition-colors"
-            >/sobre</a
-          >
-          <a
-            href="#skills"
-            class="text-slate-400 hover:text-cyanneon transition-colors"
-            >/habilidades</a
-          >
-          <a
-            href="#projects"
-            class="text-slate-400 hover:text-cyanneon transition-colors"
-            >/projetos</a
-          >
-          <a
-            href="#contact"
-            class="text-slate-400 hover:text-greeneon transition-colors"
-            >/contato</a
-          >
+        <a href="#" class="font-mono text-lg font-bold tracking-wider text-white">WANDREY<span class="text-cyanneon">.</span>DEV</a>
+        <div class="hidden md:flex items-center space-x-8 font-mono text-sm tracking-wide">
+          <a href="#about" class="text-slate-400 hover:text-cyanneon transition-colors">/sobre</a>
+          <a href="#skills" class="text-slate-400 hover:text-cyanneon transition-colors">/habilidades</a>
+          <a href="#projects" class="text-slate-400 hover:text-cyanneon transition-colors">/projetos</a>
+          <a href="#contact" class="text-slate-400 hover:text-greeneon transition-colors">/contato</a>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden px-6">
-      <!-- Background decorative elements -->
-      <div
-        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyanneon/5 rounded-full blur-[120px] pointer-events-none"
-      ></div>
-      <div
-        class="absolute top-1/3 left-1/3 w-[300px] h-[300px] bg-greeneon/5 rounded-full blur-[100px] pointer-events-none"
-      ></div>
-
-      <div
-        class="max-w-5xl mx-auto relative z-10 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-12"
-      >
+      <div class="max-w-5xl mx-auto relative z-10 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-12">
         <div class="flex-1 text-center md:text-left">
-          <p
-            class="font-mono text-sm md:text-base text-cyanneon uppercase tracking-[0.2em] mb-4 glow-text-cyan"
-          >
-            // DISPONÍVEL PARA NOVOS DESAFIOS
-          </p>
-          <h1
-            class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6"
-          >
+          <p class="font-mono text-sm md:text-base text-cyanneon uppercase tracking-[0.2em] mb-4 glow-text-cyan">// DISPONÍVEL PARA NOVOS DESAFIOS</p>
+          <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">
             Olá, eu sou o <br class="hidden sm:inline" />
-            <span
-              class="bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400"
-              >Wandrey Rodrigues</span
-            >
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">Wandrey Rodrigues</span>
           </h1>
-          <p
-            class="text-lg md:text-2xl font-light text-slate-400 max-w-2xl mb-10 leading-relaxed mx-auto md:mx-0"
-          >
-            Software Engineer e Analista de Dados. Especializado em
-            processamento de grandes volumes de dados e arquiteturas robustas
-            para inteligência de negócio.
+          <p class="text-lg md:text-2xl font-light text-slate-400 max-w-2xl mb-10 leading-relaxed mx-auto md:mx-0">
+            Software Engineer e Analista de Dados. Especializado em processamento de grandes volumes de dados e arquiteturas robustas para inteligência de negócio.
           </p>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-            <a
-              href="#projects"
-              class="glow-btn-cyan bg-cyanneon text-darkbg px-8 py-3.5 rounded font-mono font-bold tracking-wide text-sm border border-cyanneon hover:bg-transparent hover:text-cyanneon"
-            >
+            <a href="#projects" class="glow-btn-cyan bg-cyanneon text-darkbg px-8 py-3.5 rounded font-mono font-bold tracking-wide text-sm border border-cyanneon hover:bg-transparent hover:text-cyanneon">
               VER PROJETOS_
             </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=5562992480640&text=Ol%C3%A1%2C%20Wandrey!%20Gostaria%20de%20conectar%20com%20voc%C3%AA."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="relative z-20 cursor-pointer block glow-btn-green bg-transparent text-greeneon px-8 py-3.5 rounded font-mono font-bold tracking-wide text-sm border border-greeneon/40 hover:border-greeneon hover:bg-greeneon/5"
-            >
+            <!-- Botão WhatsApp Corrigido -->
+            <a href="https://api.whatsapp.com/send?phone=5562992480640&text=Ol%C3%A1%2C%20Wandrey!%20Gostaria%20de%20conectar%20com%20voc%C3%AA." target="_blank" rel="noopener noreferrer" class="relative z-20 cursor-pointer block glow-btn-green bg-transparent text-greeneon px-8 py-3.5 rounded font-mono font-bold tracking-wide text-sm border border-greeneon/40 hover:border-greeneon hover:bg-greeneon/5">
               CONECTAR_
             </a>
           </div>
         </div>
 
         <!-- Foto de Perfil -->
-        <div
-          class="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden profile-glow flex-shrink-0 relative bg-darkcard flex items-center justify-center"
-        >
-          <!-- O ideal é salvar a sua foto como "perfil.jpg" na mesma pasta do arquivo HTML -->
-          <img
-            src="perfil.png"
-            alt="Wandrey Rodrigues Ferreira"
-            class="w-full h-full object-cover relative z-10 fallback-bg"
-            onerror="
-              this.style.display = 'none';
-              this.nextElementSibling.style.display = 'block';
-            "
-          />
-          <!-- Placeholder caso a imagem não carregue -->
-          <span
-            class="absolute text-5xl text-cyanneon font-mono font-bold"
-            style="display: none"
-            >WR</span
-          >
+        <div class="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden profile-glow flex-shrink-0 relative bg-darkcard flex items-center justify-center">
+          <img src="perfil.png" alt="Wandrey Rodrigues Ferreira" class="w-full h-full object-cover relative z-10 fallback-bg" onerror="this.style.display = 'none'; this.nextElementSibling.style.display = 'block';" />
+          <span class="absolute text-5xl text-cyanneon font-mono font-bold" style="display: none">WR</span>
         </div>
       </div>
     </header>
-
     <!-- About Section -->
     <section
       id="about"
