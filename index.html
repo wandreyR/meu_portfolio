@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wandrey Rodrigues Ferreira | Portfólio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkbg: "#0a0f1d",
+              darkcard: "#111827",
+              darkborder: "#1f2937",
+              cyanneon: "#00f0ff",
+              greeneon: "#39ff14",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0a0f1d;
+        color: #e2e8f0;
+      }
+      .glow-text-cyan {
+        text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+      }
+      .glow-text-green {
+        text-shadow: 0 0 12px rgba(57, 255, 20, 0.6);
+      }
+      .glow-btn-cyan {
+        box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+      .glow-btn-cyan:hover {
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.7);
+      }
+      .glow-btn-green {
+        box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+        transition: all 0.3s ease;
+      }
+      .glow-btn-green:hover {
+        box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
+      }
+      .card-glow:hover {
+        box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
+        border-color: #00f0ff;
+      }
+    </style>
+  </head>
+  <body
+    class="font-sans antialiased selection:bg-cyanneon selection:text-darkbg"
+  >
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-darkborder/50 px-6 py-4"
+    >
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <a
+          href="#"
+          class="font-mono text-lg font-bold tracking-wider text-white"
+        >
+          WANDREY<span class="text-cyanneon">.</span>DEV
+        </a>
+        <div
+          class="hidden md:flex items-center space-x-8 font-mono text-sm tracking-wide"
+        >
+          <a
+            href="#about"
+            class="text-slate-400 hover:text-cyanneon transition-colors"
+            >/sobre</a
+          >
+          <a
+            href="#skills"
+            class="text-slate-400 hover:text-cyanneon transition-colors"
+            >/habilidades</a
+          >
+          <a
+            href="#projects"
+            class="text-slate-400 hover:text-cyanneon transition-colors"
+            >/projetos</a
+          >
+          <a
+            href="#contact"
+            class="text-slate-400 hover:text-greeneon transition-colors"
+            >/contato</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden px-6">
+      <!-- Background decorative elements -->
+      <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyanneon/5 rounded-full blur-[120px] pointer-events-none"
+      ></div>
+      <div
+        class="absolute top-1/3 left-1/3 w-[300px] h-[300px] bg-greeneon/5 rounded-full blur-[100px] pointer-events-none"
+      ></div>
+
+      <div class="max-w-4xl mx-auto relative z-10">
+        <p
+          class="font-mono text-sm md:text-base text-cyanneon uppercase tracking-[0.2em] mb-4 glow-text-cyan"
+        >
+          // DISPONÍVEL PARA NOVOS DESAFIOS
+        </p>
+        <h1
+          class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6"
+        >
+          Olá, eu sou o <br class="hidden sm:inline" />
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400"
+            >Wandrey Rodrigues</span
+          >
+        </h1>
+        <p
+          class="text-lg md:text-2xl font-light text-slate-400 max-w-2xl mb-10 leading-relaxed"
+        >
+          Desenvolvedor de Software focado em sistemas robustos de missão
+          crítica e Analista de Dados especializado em transformar ecossistemas
+          complexos em inteligência de negócio.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            class="glow-btn-cyan bg-cyanneon text-darkbg px-8 py-3.5 rounded font-mono font-bold tracking-wide text-sm border border-cyanneon hover:bg-transparent hover:text-cyanneon"
+          >
+            VER PROJETOS_
+          </a>
+          <a
+            href="whastapp://send?phone=5511999999999&text=Ol%C3%A1%2C%20Wandrey!%20Gostaria%20de%20conectar%20com%20você."
+            class="glow-btn-green bg-transparent text-greeneon px-8 py-3.5 rounded font-mono font-bold tracking-wide text-sm border border-greeneon/40 hover:border-greeneon hover:bg-greeneon/5"
+          >
+            CONECTAR_
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-20 px-6 border-t border-darkborder/30 bg-darkcard/20"
+    >
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-center space-x-4 mb-8">
+          <span class="font-mono text-cyanneon">01.</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">
+            Sobre Mim
+          </h2>
+          <div class="h-[1px] bg-darkborder flex-grow"></div>
+        </div>
+        <div
+          class="text-slate-400 space-y-6 text-base md:text-lg leading-relaxed font-light"
+        >
+          <p>
+            Transito com naturalidade entre a engenharia de software e a ciência
+            de dados. Minha paixão está em construir soluções que não apenas
+            rodam com máxima eficiência técnica, mas que também resolvem dores
+            reais de processos e infraestrutura de negócios.
+          </p>
+          <p>
+            Tenho experiência sólida no desenvolvimento de arquiteturas de
+            back-end escaláveis, modelagem de bancos de dados relacionais e na
+            criação de regras de negócio complexas — como engines de cálculo de
+            horas, automação logística e fluxos financeiros. Do outro lado da
+            moeda, utilizo ferramentas analíticas avançadas para extrair, limpar
+            e expor dados de maneira visual e estratégica.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 border-t border-darkborder/30">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-center space-x-4 mb-12">
+          <span class="font-mono text-cyanneon">02.</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">
+            Habilidades Técnicas
+          </h2>
+          <div class="h-[1px] bg-darkborder flex-grow"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Group 1 -->
+          <div
+            class="border border-darkborder bg-darkcard/40 p-6 rounded group transition-all duration-300"
+          >
+            <div class="text-cyanneon mb-4">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                ></path>
+              </svg>
+            </div>
+            <h3
+              class="font-mono font-bold text-white text-base mb-4 group-hover:text-cyanneon transition-colors"
+            >
+              // ENG. DE SOFTWARE
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >JavaScript</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >PHP</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Python</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >FastAPI</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Tailwind CSS</span
+              >
+            </div>
+          </div>
+
+          <!-- Group 2 -->
+          <div
+            class="border border-darkborder bg-darkcard/40 p-6 rounded group transition-all duration-300"
+          >
+            <div class="text-cyanneon mb-4">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2"
+                ></path>
+              </svg>
+            </div>
+            <h3
+              class="font-mono font-bold text-white text-base mb-4 group-hover:text-cyanneon transition-colors"
+            >
+              // DADOS & BI
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >SQL (MySQL/Postgres)</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Power BI</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Modelagem SGBD</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >ETL</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Pandas</span
+              >
+            </div>
+          </div>
+
+          <!-- Group 3 -->
+          <div
+            class="border border-darkborder bg-darkcard/40 p-6 rounded group transition-all duration-300"
+          >
+            <div class="text-greeneon mb-4">
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                ></path>
+              </svg>
+            </div>
+            <h3
+              class="font-mono font-bold text-white text-base mb-4 group-hover:text-greeneon transition-colors"
+            >
+              // INFRA & DEVOPS
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Docker</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Git / GitHub</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >Linux / VPS</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >CI/CD Básico</span
+              >
+              <span
+                class="font-mono text-xs bg-darkbg border border-darkborder text-slate-400 px-2.5 py-1 rounded"
+                >EasyPanel</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="py-20 px-6 border-t border-darkborder/30 bg-darkcard/10"
+    >
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-center space-x-4 mb-12">
+          <span class="font-mono text-cyanneon">03.</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">
+            Projetos em Destaque
+          </h2>
+          <div class="h-[1px] bg-darkborder flex-grow"></div>
+        </div>
+
+        <div class="space-y-12">
+          <!-- Project 1: AutoForge -->
+          <div
+            class="card-glow border border-darkborder bg-darkcard/50 p-6 md:p-8 rounded-lg transition-all duration-300"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <span
+                  class="font-mono text-xs text-cyanneon uppercase tracking-wider"
+                  >// PLATAFORMA SAAS</span
+                >
+                <h3 class="text-2xl font-bold text-white mt-1">AutoForge</h3>
+              </div>
+              <div class="text-slate-500 hover:text-cyanneon cursor-pointer">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-slate-400 font-light text-base mb-6 leading-relaxed">
+              Sistema web completo voltado para a gestão e automação de oficinas
+              e centros automotivos. A plataforma gerencia de ponta a ponta a
+              abertura de ordens de serviço complexas, faturamento integrado,
+              controle rígido de estoque de peças e cadastro dinâmico de
+              clientes.
+            </p>
+            <a
+              href="https://awlsystems.com.br/landingpage.html"
+              class="text-cyanneon hover:underline"
+              >Acessar Projeto</a
+            >
+            <div
+              class="flex flex-wrap gap-2 mb-4 font-mono text-xs text-slate-400"
+            >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >PHP</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >FastAPI</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >MySQL</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >Tailwind CSS</span
+              >
+            </div>
+          </div>
+
+          <!-- Project 2: Deltaway -->
+          <div
+            class="card-glow border border-darkborder bg-darkcard/50 p-6 md:p-8 rounded-lg transition-all duration-300"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <span
+                  class="font-mono text-xs text-greeneon uppercase tracking-wider"
+                  >// Emprego Atual</span
+                >
+                <h3 class="text-2xl font-bold text-white mt-1">
+                  Deltaway sistemas de transito e tecnologia
+                </h3>
+              </div>
+              <div class="text-slate-500 hover:text-greeneon cursor-pointer">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-slate-400 font-light text-base mb-6 leading-relaxed">
+              Desenvolvimento e Análise de Dados: Atuação no processamento de
+              grandes volumes de dados e suporte técnico especializado.
+              Responsável pela criação de sistemas internos para otimização de
+              processos e resolução de problemas complexos de infraestrutura e
+              software, suporte a clientes e análise de dados para tomada de
+              decisão estratégica.
+            </p>
+            <div
+              class="flex flex-wrap gap-2 mb-4 font-mono text-xs text-slate-400"
+            >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >Python</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >JavaScript</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >firebird</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >suporte</span
+              >
+            </div>
+          </div>
+
+          <!-- Project 3: Business Intelligence Core -->
+          <div
+            class="card-glow border border-darkborder bg-darkcard/50 p-6 md:p-8 rounded-lg transition-all duration-300"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <span
+                  class="font-mono text-xs text-cyanneon uppercase tracking-wider"
+                  >// ENGENHARIA DE DADOS & ANALYTICS</span
+                >
+                <h3 class="text-2xl font-bold text-white mt-1">
+                  Data & Analytics Portal
+                </h3>
+              </div>
+              <div class="text-slate-500 hover:text-cyanneon cursor-pointer">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-slate-400 font-light text-base mb-6 leading-relaxed">
+              Desenvolvimento de pipeline de dados estruturado para consolidação
+              de relatórios financeiros e operacionais. Centralização de fontes
+              de dados dispersas em um modelo relacional limpo, culminando em
+              dashboards de alta performance voltados para tomada de decisão
+              executiva.
+            </p>
+            <a
+              href="https://www.linkedin.com/posts/wandrey-rodrigues_power-datascience-activity-7272570349366431745-A_OY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTtRe8BAQXHGa5sG8lRGB2W6mVtEFLT7m4"
+              class="text-cyanneon hover:text-cyanneon/80 underline"
+              target="_blank"
+              >Ver projeto no LinkedIn</a
+            >
+            <div
+              class="flex flex-wrap gap-2 mb-4 font-mono text-xs text-slate-400"
+            >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >Power BI</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >SQL Server</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >Pandas</span
+              >
+              <span class="bg-darkbg px-2 py-1 rounded border border-darkborder"
+                >ETL Pipelines</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 border-t border-darkborder/30">
+      <div class="max-w-2xl mx-auto text-center">
+        <span class="font-mono text-greeneon block mb-3 glow-text-green"
+          >// FALE COMIGO</span
+        >
+        <h2
+          class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight"
+        >
+          Vamos construir algo juntos?
+        </h2>
+        <p
+          class="text-slate-400 font-light text-base md:text-lg mb-10 leading-relaxed"
+        >
+          Estou aberto a oportunidades profissionais, projetos freelance
+          inovadores ou simplesmente para trocar ideias sobre desenvolvimento e
+          arquitetura de dados.
+        </p>
+        <a
+          href="wandrey_rf@outlook.com"
+          class="glow-btn-green inline-block bg-greeneon text-darkbg px-8 py-4 rounded font-mono font-bold tracking-wide text-sm border border-greeneon hover:bg-transparent hover:text-greeneon"
+        >
+          ENVIAR E-MAIL_
+        </a>
+
+        <!-- Social Links -->
+        <div
+          class="flex justify-center space-x-6 mt-16 font-mono text-sm text-slate-500"
+        >
+          <a
+            href="https://github.com/wandreyR"
+            class="hover:text-cyanneon transition-colors"
+            >GitHub</a
+          >
+          <span>·</span>
+          <a
+            href="https://www.linkedin.com/in/wandrey-rodrigues-ferreira/"
+            class="hover:text-cyanneon transition-colors"
+            >LinkedIn</a
+          >
+          <span>·</span>
+          <a
+            href="https://drive.google.com/file/d/182uCV-t_JFyprsa-A7UB6dSk1hFOwWLr/view?usp=sharing"
+            class="hover:text-cyanneon transition-colors"
+            >Currículo</a
+          >
+          <span>·</span>
+          <a
+            href="https://wa.me/5562992480640?text=Ol%C3%A1%2C%20Wandrey!%20Gostaria%20de%20conectar%20com%20você."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-cyanneon transition-colors"
+          >
+            whatsapp
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-8 px-6 border-t border-darkborder/10 text-center font-mono text-xs text-slate-600"
+    >
+      <p>
+        &copy; 2026 Wandrey Rodrigues Ferreira. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
